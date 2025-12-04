@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalék App UI/UX Case Study | Muhammad Faries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <i data-lucide="arrow-left" class="w-5 h-5 mr-2 text-slate-500 group-hover:text-blue-600 transition-colors"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-32 pb-12 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="inline-block py-1 px-3 rounded-full bg-purple-100 text-purple-700 text-xs font-semibold tracking-wide uppercase">UI/UX Design</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold tracking-wide uppercase border border-slate-200">Figma Prototype</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6">Etalék: Empowering Youth Coding</h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                A mobile application designed to simplify coding education for Malaysian youth through gamification and interactive learning modules.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#prototype" class="px-6 py-3 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors shadow-lg shadow-purple-500/30 flex items-center gap-2">
+                    <i data-lucide="play-circle" class="w-4 h-4"></i> View Prototype
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- App Showcase Image -->
+        <section class="mb-20">
+            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm text-center">
+                <div class="w-full bg-white rounded-lg shadow-xl border border-slate-200 mx-auto max-w-4xl overflow-hidden">
+                    <img src="images/etalek-1.png" alt="Etalék App Mockup" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">The Design Process</h2>
+            
+            <div class="space-y-24">
+                <!-- Phase 1: Empathize & Define -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Phase 1 & 2</span>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Empathize & Define</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            We began by understanding the challenges Malaysian students face in learning coding: lack of engagement, complex jargon, and limited accessibility. 
+                        </p>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <i data-lucide="target" class="w-4 h-4 text-red-500"></i> Problem Statement
+                            </h4>
+                            <p class="text-sm text-slate-600 italic">
+                                "Students perceive coding as difficult and boring. Existing tools lack localized context and fail to sustain long-term motivation."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+                        <img src="images/userpersona2.png" alt="User Persona and Empathy Map" class="w-full h-auto object-contain" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Phase 3: Ideate & Wireframe -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1 bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+                        <img src="images/etalek-2.png" alt="Low-Fidelity Wireframes and Sketches" class="w-full h-auto object-contain" loading="lazy">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Phase 3</span>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Ideation & Wireframing</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            We brainstormed features focusing on <strong>gamification</strong> (badges, leaderboards) and <strong>bite-sized lessons</strong>. The "Etalék" concept was born—a digital storefront for knowledge.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                <span>Interactive Quizzes</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                <span>Progress Tracking Dashboard</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                <span>Community Forum</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NEW SECTION: User Flow Diagram -->
+                <div class="bg-white rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm">
+                    <div class="text-center mb-10">
+                        <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Phase 4</span>
+                        <h3 class="text-2xl font-bold text-slate-900">User Flow & Architecture</h3>
+                        <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
+                            Before moving to high-fidelity designs, we mapped out the user's journey to ensure a logical and intuitive navigation experience from login to lesson completion.
+                        </p>
+                    </div>
+                    
+                    <!-- User Flow Slider -->
+                    <div class="relative w-full max-w-4xl mx-auto bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200 group">
+                        
+                        <!-- Slides Container -->
+                        <div id="userFlowSlider" class="flex transition-transform duration-500 ease-in-out h-full">
+                            
+                            <!-- Slide 1 -->
+                            <div class="w-full flex-shrink-0 h-full relative bg-slate-50 flex items-center justify-center overflow-hidden aspect-[16/9]">
+                                <img src="images/userflow_diagram1.png" alt="User Flow Diagram 1" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="w-full flex-shrink-0 h-full relative bg-slate-50 flex items-center justify-center overflow-hidden aspect-[16/9]">
+                                <img src="images/userflow_diagram2.png.png" alt="User Flow Diagram 2" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="w-full flex-shrink-0 h-full relative bg-slate-50 flex items-center justify-center overflow-hidden aspect-[16/9]">
+                                <img src="images/userflow_diagram3.png" alt="User Flow Diagram 3" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="w-full flex-shrink-0 h-full relative bg-slate-50 flex items-center justify-center overflow-hidden aspect-[16/9]">
+                                <img src="images/userflow_diagram4.png" alt="User Flow Diagram 4" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+
+                        </div>
+
+                        <!-- Slider Controls -->
+                        <button onclick="prevUserFlowSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                            <i data-lucide="chevron-left" class="w-6 h-6 text-slate-800"></i>
+                        </button>
+                        <button onclick="nextUserFlowSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-slate-800"></i>
+                        </button>
+
+                        <!-- Indicators -->
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                            <button onclick="goToUserFlowSlide(0)" class="userFlowIndicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                            <button onclick="goToUserFlowSlide(1)" class="userFlowIndicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                            <button onclick="goToUserFlowSlide(2)" class="userFlowIndicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                            <button onclick="goToUserFlowSlide(3)" class="userFlowIndicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Prototype -->
+                <div id="prototype" class="text-center">
+                    <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Phase 4 & 5</span>
+                    <h3 class="text-3xl font-bold text-slate-900 mb-6">High-Fidelity Prototype</h3>
+                    <p class="text-slate-600 max-w-2xl mx-auto mb-10">
+                        The final design was built in Figma, featuring a clean, vibrant UI tailored for youth engagement. Below is the interactive prototype used for user testing.
+                    </p>
+                    
+                    <!-- Figma Embed -->
+                    <div class="w-full aspect-[16/9] md:aspect-[21/9] bg-white rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+                        <iframe src="https://www.figma.com/proto/7OoLY4NzggmOPtC0m8zgPb/Etalek-Prototype?node-id=37-59&starting-point-node-id=32%3A84&t=asDpTo6UTOt0xroG-1&scaling=scale-down&content-scaling=fixed&embed-host=share" width="100%" height="100%" style="border: none;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Grid -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">App Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-4">
+                        <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Gamified Learning</h3>
+                    <p class="text-sm text-slate-600">Points, badges, and leaderboards to motivate consistent practice.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 mx-auto mb-4">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Curated Modules</h3>
+                    <p class="text-sm text-slate-600">Structured lessons ranging from "Hello World" to advanced algorithms.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 mx-auto mb-4">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Peer Support</h3>
+                    <p class="text-sm text-slate-600">A community forum for students to ask questions and share projects.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 mb-4">© 2025 Muhammad Faries. All rights reserved.</p>
+            <a href="index.html" class="text-blue-600 font-medium hover:underline">Back to Main Portfolio</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // User Flow Slider Logic
+        let currentUserFlowSlide = 0;
+        const totalUserFlowSlides = 4;
+        const userFlowSlider = document.getElementById('userFlowSlider');
+        const userFlowIndicators = document.querySelectorAll('.userFlowIndicator');
+
+        function updateUserFlowSlider() {
+            userFlowSlider.style.transform = `translateX(-${currentUserFlowSlide * 100}%)`;
+            userFlowIndicators.forEach((ind, index) => {
+                if (index === currentUserFlowSlide) {
+                    ind.classList.remove('bg-white/50');
+                    ind.classList.add('bg-white');
+                } else {
+                    ind.classList.remove('bg-white');
+                    ind.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        function nextUserFlowSlide() {
+            currentUserFlowSlide = (currentUserFlowSlide + 1) % totalUserFlowSlides;
+            updateUserFlowSlider();
+        }
+
+        function prevUserFlowSlide() {
+            currentUserFlowSlide = (currentUserFlowSlide - 1 + totalUserFlowSlides) % totalUserFlowSlides;
+            updateUserFlowSlider();
+        }
+
+        function goToUserFlowSlide(index) {
+            currentUserFlowSlide = index;
+            updateUserFlowSlider();
+        }
+
+        // Initialize
+        updateUserFlowSlider();
+    </script>
+</body>
+</html>

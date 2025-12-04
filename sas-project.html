@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS Data Analysis Project | Muhammad Faries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <i data-lucide="arrow-left" class="w-5 h-5 mr-2 text-slate-500 group-hover:text-blue-600 transition-colors"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">Back to Portfolio</span>
+                </a>
+                <div class="hidden md:block text-sm font-medium text-slate-500">
+                    IMC501 - Information Analytics
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-32 pb-12 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold tracking-wide uppercase mb-4">Statistical Analysis</span>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Retail Profit Analysis with SAS</h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                Advanced statistical modeling (ANOVA & Regression) to identify key revenue drivers across product categories using SAS 7.1.
+            </p>
+            
+            <!-- Action Buttons -->
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#report-viewer" class="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                    <i data-lucide="eye" class="w-4 h-4"></i> Read Report
+                </a>
+                <!-- Link to the uploaded PDF on Google Drive -->
+                <a href="https://drive.google.com/uc?export=download&id=1ae-U05J77w678E9ModdvUXih1vokCXeb" class="px-6 py-3 rounded-lg bg-white text-slate-700 border border-slate-200 font-medium hover:bg-slate-50 transition-colors flex items-center gap-2" target="_blank" rel="noopener">
+                    <i data-lucide="download" class="w-4 h-4"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Overview Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-4">
+                    <i data-lucide="sigma" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Methodology</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Utilized <strong>SAS 7.1</strong> to perform Linear Regression and Analysis of Variance (ANOVA). The goal was to test hypotheses regarding the relationship between product categories (e.g., Golf, Running) and profit margins.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                    <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Key Findings</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    The analysis revealed significant profit variances (Prob > F < .0001) in categories like <strong>Children's Sports</strong> and <strong>Outdoor Gear</strong>, helping to pinpoint high-margin inventory for strategic stocking.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4">
+                    <i data-lucide="file-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 mb-2">Impact</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Delivered a data-backed proposal for inventory optimization. The findings informed membership decisions and highlighted underperforming categories requiring promotional intervention.
+                </p>
+            </div>
+        </div>
+
+        <!-- PDF Viewer Section -->
+        <section id="report-viewer" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+            <div class="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="file-text" class="w-5 h-5 text-indigo-400"></i>
+                    <span class="font-medium">IMC501_GROUP_ASSIGNMENT.pdf</span>
+                </div>
+                <span class="text-xs text-slate-400 uppercase tracking-widest">Document Preview</span>
+            </div>
+            
+            <!-- 
+                PDF Embed 
+                This uses the browser's native PDF viewer which allows scrolling/sliding pages.
+            -->
+            <div class="w-full h-[800px] bg-slate-100 flex items-center justify-center">
+                <!-- Embedded Google Drive preview -->
+                <iframe src="https://drive.google.com/file/d/1ae-U05J77w678E9ModdvUXih1vokCXeb/preview" width="100%" height="100%" class="border-none" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 mb-4">© 2025 Muhammad Faries. All rights reserved.</p>
+            <a href="index.html" class="text-blue-600 font-medium hover:underline">Back to Main Portfolio</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

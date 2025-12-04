@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Sales Dashboard Project | Muhammad Faries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <i data-lucide="arrow-left" class="w-5 h-5 mr-2 text-slate-500 group-hover:text-blue-600 transition-colors"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-32 pb-12 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold tracking-wide uppercase mb-4">Data Analysis Project</span>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Supermarket Sales Dashboard</h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                A comprehensive Excel dashboard analyzing 4 years of sales data across three major branches to identify growth trends and operational bottlenecks.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Dashboard Screenshot Section -->
+        <section class="mb-16">
+            <figure class="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+                <div class="bg-slate-50 aspect-[16/9] sm:aspect-video flex items-center justify-center">
+                    <picture>
+                        <!-- If you add higher-resolution images later, update srcset for 2x/3x displays -->
+                        <img src="images/excel-dashboard.png" srcset="images/excel-dashboard.png 1x" alt="Excel dashboard showing sales charts and pivot tables" loading="lazy" class="w-full h-full object-contain" style="background-color: #f8fafc;">
+                    </picture>
+                </div>
+                <figcaption class="p-4 text-sm text-slate-600 border-t border-slate-100">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                        <span>Screenshot of the Excel dashboard — open the image in a new tab for full resolution.</span>
+                        <div class="mt-2 sm:mt-0">
+                            <a href="images/excel-dashboard.png" class="text-blue-600 font-medium mr-3" target="_blank" rel="noopener">Open image</a>
+
+                            <!-- Drive download: replace YOUR_FILE_ID with the file's ID from the shareable Drive link -->
+                            <a href="https://docs.google.com/spreadsheets/d/1U3gsMSfJUOuYFmn0sWG9elJtjuqb8hPc/edit?usp=sharing&ouid=116739889368013596733&rtpof=true&sd=true" class="inline-flex items-center px-3 py-1.5 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700" target="_blank" rel="noopener">Download (Drive)</a>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </section>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Sidebar: Project Details -->
+            <div class="md:col-span-1 space-y-8">
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-3 uppercase text-sm tracking-wider border-b border-slate-200 pb-2">Tools Used</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Microsoft Excel</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Pivot Tables</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Data Cleansing</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-3 uppercase text-sm tracking-wider border-b border-slate-200 pb-2">Key Metrics</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex justify-between">
+                            <span>Total Revenue:</span>
+                            <span class="font-semibold text-slate-900">$322,966</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Transactions:</span>
+                            <span class="font-semibold text-slate-900">1,000</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Avg Rating:</span>
+                            <span class="font-semibold text-slate-900">6.97/10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Text: Explanation -->
+            <div class="md:col-span-2 space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Project Overview</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        This project focuses on analyzing sales performance for a supermarket chain with branches in Yangon, Mandalay, and Naypyitaw. The goal was to transform raw transaction data into an interactive dashboard that allows stakeholders to monitor financial health and customer behavior from 2019 to 2022.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        By utilizing advanced Excel features, including Pivot Tables and Slicers, I created a tool that filters data by branch, product category, and time period, enabling data-driven decision-making.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Key Insights & Findings</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Sales Trends & Seasonality</h3>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    The data reveals a consistent growth trajectory peaking in 2021 with over $114k in revenue. However, a sharp decline was observed in Q1 2022, highlighting the need for immediate marketing intervention.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">2</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Operational Peak Hours</h3>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    Footfall analysis indicates that the busiest operational hours are between <strong>1:00 PM and 7:00 PM</strong>. Optimizing staff shifts during these windows could significantly improve service quality and customer ratings.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 font-bold">3</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Customer Preferences</h3>
+                                <p class="text-slate-600 text-sm mt-1">
+                                    Payment methods are evenly split between E-wallets, Cash, and Credit Cards (~33% each), suggesting a digitally mature customer base. Product-wise, the Naypyitaw branch leads in "Food & Beverages" sales, while Yangon excels in "Home & Lifestyle".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 mb-4">© 2025 Muhammad Faries. All rights reserved.</p>
+            <a href="index.html" class="text-blue-600 font-medium hover:underline">Back to Main Portfolio</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

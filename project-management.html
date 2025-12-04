@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petronas PMO Engagement | Muhammad Faries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <i data-lucide="arrow-left" class="w-5 h-5 mr-2 text-slate-500 group-hover:text-blue-600 transition-colors"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-32 pb-12 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="inline-block py-1 px-3 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold tracking-wide uppercase">Industry Engagement</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold tracking-wide uppercase border border-slate-200">
+                    <i data-lucide="lock" class="w-3 h-3 inline mr-1 mb-0.5"></i> Private & Confidential
+                </span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Petronas IT Project Management Insight</h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                An exclusive engagement with a Petronas PMO Executive to bridge the gap between academic theory and real-world IT project execution.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Photo Slider Section -->
+        <section class="mb-16">
+            <div class="relative w-full max-w-4xl mx-auto aspect-video bg-slate-200 rounded-xl overflow-hidden shadow-xl border border-slate-200 group">
+                
+                <!-- Slides Container -->
+                <div id="slider" class="flex transition-transform duration-500 ease-in-out h-full">
+                    
+                    <!-- Slide 1: Meeting Photo -->
+                    <div class="w-full flex-shrink-0 h-full relative bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <img src="images/pmo-meeting1.jpg" alt="PMO Meeting Session" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+
+                    <!-- Slide 2: Gantt Chart Screenshot -->
+                    <div class="w-full flex-shrink-0 h-full relative bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <img src="images/pmo-meeting2.jpg" alt="Microsoft Project Gantt Chart" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+
+                    <!-- Slide 3: Report Cover -->
+                    <div class="w-full flex-shrink-0 h-full relative bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <img src="images/pmo-meeting3.jpg" alt="PMO Analysis Report" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="w-full flex-shrink-0 h-full relative bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <img src="images/pmo-meeting4.jpg" alt="PMO Project Documentation" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="w-full flex-shrink-0 h-full relative bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <img src="images/pmo-meeting5.jpg" alt="PMO Project Summary" class="w-full h-full object-contain" loading="lazy">
+                    </div>
+
+                </div>
+
+                <!-- Slider Controls -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                    <i data-lucide="chevron-left" class="w-6 h-6 text-slate-800"></i>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                    <i data-lucide="chevron-right" class="w-6 h-6 text-slate-800"></i>
+                </button>
+
+                <!-- Indicators -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <button onclick="goToSlide(0)" class="indicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    <button onclick="goToSlide(1)" class="indicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    <button onclick="goToSlide(2)" class="indicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    <button onclick="goToSlide(3)" class="indicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    <button onclick="goToSlide(4)" class="indicator w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                </div>
+            </div>
+            <p class="text-center text-sm text-slate-500 mt-4 italic">Gallery: Interview Session & Project Artifacts</p>
+        </section>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Sidebar: Project Details -->
+            <div class="md:col-span-1 space-y-8">
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-3 uppercase text-sm tracking-wider border-b border-slate-200 pb-2">Tools Applied</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Microsoft Project</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Gantt Charts</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Interviewing</span>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border border-yellow-100 p-4 rounded-lg">
+                    <h3 class="font-bold text-yellow-800 mb-2 flex items-center gap-2">
+                        <i data-lucide="shield-alert" class="w-4 h-4"></i> Confidentiality
+                    </h3>
+                    <p class="text-xs text-yellow-700 leading-relaxed">
+                        Due to the sensitive nature of Petronas' internal operations, specific project names, budgets, and technical architectures discussed during this interview are omitted to comply with Non-Disclosure protocols.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main Text: Narrative -->
+            <div class="md:col-span-2 space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">The Objective</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Academic study provides the framework, but industry exposure provides the context. I initiated this interview with a Project Management Office (PMO) Executive at Petronas to understand how large-scale IT projects are managed in a high-stakes corporate environment.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        The focus was to deconstruct the lifecycle of a real-world IT implementation, moving beyond textbook definitions of "Agile" and "Waterfall" to understand the hybrid realities of the oil and gas sector.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">From Interview to Application</h2>
+                    
+                    <div class="relative border-l-2 border-slate-200 ml-3 space-y-10">
+                        <!-- Step 1 -->
+                        <div class="relative pl-8">
+                            <span class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow"></span>
+                            <h3 class="font-bold text-slate-900">1. Requirement Gathering (The Interview)</h3>
+                            <p class="text-slate-600 text-sm mt-2">
+                                Conducted a structured interview to extract data on project timelines, resource allocation challenges, and risk mitigation strategies used within Petronas.
+                            </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative pl-8">
+                            <span class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white shadow"></span>
+                            <h3 class="font-bold text-slate-900">2. Synthesis & Reporting</h3>
+                            <p class="text-slate-600 text-sm mt-2">
+                                Compiled the raw interview data into a comprehensive industry analysis report. This document highlighted the contrast between theoretical "Critical Path Method" and the actual adaptive planning used by the executive.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative pl-8">
+                            <span class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-teal-600 border-4 border-white shadow"></span>
+                            <h3 class="font-bold text-slate-900">3. MS Project Simulation</h3>
+                            <p class="text-slate-600 text-sm mt-2">
+                                To validate my understanding, I reconstructed the project's timeline using <strong>Microsoft Project</strong>. I generated a detailed <strong>Gantt Chart</strong> based on the phases described by the executive, effectively translating verbal insights into a technical project schedule.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 mb-4">© 2025 Muhammad Faries. All rights reserved.</p>
+            <a href="index.html" class="text-blue-600 font-medium hover:underline">Back to Main Portfolio</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Slider Logic
+        let currentSlide = 0;
+        const totalSlides = 5;
+        const slider = document.getElementById('slider');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((ind, index) => {
+                if (index === currentSlide) {
+                    ind.classList.remove('bg-white/50');
+                    ind.classList.add('bg-white');
+                } else {
+                    ind.classList.remove('bg-white');
+                    ind.classList.add('bg-white/50');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        // Initialize
+        updateSlider();
+    </script>
+</body>
+</html>
